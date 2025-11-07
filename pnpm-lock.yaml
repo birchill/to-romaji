@@ -39,17 +39,8 @@ importers:
       vitest:
         specifier: 1.6.0
         version: 1.6.0(@types/node@20.14.9)
-      vitest-github-actions-reporter:
-        specifier: 0.11.1
-        version: 0.11.1(vitest@1.6.0(@types/node@20.14.9))
 
 packages:
-
-  '@actions/core@1.10.1':
-    resolution: {integrity: sha512-3lBR9EDAY+iYIpTnTIXmWcNbX3T2kCkAEQGIQx4NVQ0575nk2k3GRZDTPQG+vVtS2izSLmINlxXf0uLtnrTP+g==}
-
-  '@actions/http-client@2.2.1':
-    resolution: {integrity: sha512-KhC/cZsq7f8I4LfZSJKgCvEwfkE8o1538VoBeoGzokVLLnbFDEAdFD3UhoMklxo2un9NJVBdANOresx7vTHlHw==}
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -207,10 +198,6 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
-
-  '@fastify/busboy@2.1.1':
-    resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
-    engines: {node: '>=14'}
 
   '@hutson/parse-repository-url@5.0.0':
     resolution: {integrity: sha512-e5+YUKENATs1JgYHMzTr2MW/NDcXGfYFAuOQU8gJgF/kEh4EqKgfGrfLI67bMD4tbhZVlkigz/9YYwWcbOFthg==}
@@ -2454,10 +2441,6 @@ packages:
       typescript:
         optional: true
 
-  tunnel@0.0.6:
-    resolution: {integrity: sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==}
-    engines: {node: '>=0.6.11 <=0.7.0 || >=0.7.3'}
-
   type-detect@4.0.8:
     resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==}
     engines: {node: '>=4'}
@@ -2523,10 +2506,6 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  undici@5.28.4:
-    resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
-    engines: {node: '>=14.0'}
-
   unescape-js@1.1.4:
     resolution: {integrity: sha512-42SD8NOQEhdYntEiUQdYq/1V/YHwr1HLwlHuTJB5InVVdOSbgI6xu8jK5q65yIzuFCfczzyDF/7hbGzVbyCw0g==}
 
@@ -2555,10 +2534,6 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
-
-  uuid@8.3.2:
-    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
-    hasBin: true
 
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
@@ -2595,12 +2570,6 @@ packages:
         optional: true
       terser:
         optional: true
-
-  vitest-github-actions-reporter@0.11.1:
-    resolution: {integrity: sha512-ZHHB0wBgOPhMYCB17WKVlJZa+5SdudBZFoVoebwfq3ioIUTeLQGYHwh85vpdJAxRghLP8d0qI/6eCTueGyDVXA==}
-    engines: {node: '>=14.16.0'}
-    peerDependencies:
-      vitest: '>=0.28.5'
 
   vitest@1.6.0:
     resolution: {integrity: sha512-H5r/dN06swuFnzNFhq/dnz37bPXnq8xB2xB5JOVk8K09rUtoeNN+LHWkoQ0A/i3hvbUKKcCei9KpbxqHMLhLLA==}
@@ -2724,16 +2693,6 @@ packages:
 
 snapshots:
 
-  '@actions/core@1.10.1':
-    dependencies:
-      '@actions/http-client': 2.2.1
-      uuid: 8.3.2
-
-  '@actions/http-client@2.2.1':
-    dependencies:
-      tunnel: 0.0.6
-      undici: 5.28.4
-
   '@babel/code-frame@7.24.7':
     dependencies:
       '@babel/highlight': 7.24.7
@@ -2838,8 +2797,6 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
-
-  '@fastify/busboy@2.1.1': {}
 
   '@hutson/parse-repository-url@5.0.0': {}
 
@@ -5220,8 +5177,6 @@ snapshots:
       - supports-color
       - ts-node
 
-  tunnel@0.0.6: {}
-
   type-detect@4.0.8: {}
 
   type-fest@0.21.3: {}
@@ -5288,10 +5243,6 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici@5.28.4:
-    dependencies:
-      '@fastify/busboy': 2.1.1
-
   unescape-js@1.1.4:
     dependencies:
       string.fromcodepoint: 0.2.1
@@ -5325,8 +5276,6 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  uuid@8.3.2: {}
-
   validate-npm-package-license@3.0.4:
     dependencies:
       spdx-correct: 3.2.0
@@ -5357,11 +5306,6 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.14.9
       fsevents: 2.3.3
-
-  vitest-github-actions-reporter@0.11.1(vitest@1.6.0(@types/node@20.14.9)):
-    dependencies:
-      '@actions/core': 1.10.1
-      vitest: 1.6.0(@types/node@20.14.9)
 
   vitest@1.6.0(@types/node@20.14.9):
     dependencies:
