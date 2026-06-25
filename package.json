@@ -18,7 +18,11 @@
     "type": "git",
     "url": "git+https://github.com/birchill/to-romaji.git"
   },
+  "engines": {
+    "pnpm": ">=11"
+  },
   "publishConfig": {
+    "engines": {},
     "registry": "https://registry.npmjs.org"
   },
   "bugs": {
