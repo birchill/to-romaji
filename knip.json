@@ -1,4 +1,7 @@
 {
   "entry": ["src/index.ts"],
-  "ignore": ["tsup.config.ts"]
+  "ignore": ["tsup.config.ts"],
+  "lint-staged": {
+    "config": [".nano-staged.json"]
+  }
 }
