@@ -40,11 +40,6 @@
       "require": "./dist/index.cjs"
     }
   },
-  "lint-staged": {
-    "*.{ts,json,md}": [
-      "prettier --write"
-    ]
-  },
   "prettier": {
     "singleQuote": true,
     "trailingComma": "es5",
@@ -54,7 +49,7 @@
     "@release-it/conventional-changelog": "8.0.1",
     "husky": "9.0.11",
     "knip": "5.23.1",
-    "lint-staged": "15.2.7",
+    "nano-staged": "1.0.2",
     "prettier": "3.3.2",
     "release-it": "17.4.0",
     "tsup": "8.1.0",
